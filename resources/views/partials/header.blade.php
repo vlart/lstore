@@ -26,7 +26,7 @@
                     <div class="cart-item-number">{{Session::has('cart') ? Session::get('cart')->totalQty: ''}}</div>
                 </a>
                 @if (Auth::guest())
-                    <a class="nav-link w-inline-block" href="{{ route('register') }}"><img class="top-menu-icon" height="25" src="images/user_signup.svg"> <div class="cart-item-number">Register</div>
+                    <a class="nav-link w-inline-block" href="c"><img class="top-menu-icon" height="25" src="images/user_signup.svg"> <div class="cart-item-number">Register</div>
                     </a>
 
                     <a class="nav-link w-inline-block" href="{{route('login')}}"><img class="top-menu-icon" height="25" src="images/login.svg"> <div class="cart-item-number">Login</div>

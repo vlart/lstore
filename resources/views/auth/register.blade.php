@@ -85,7 +85,7 @@
                 <div class="simple-txt">interested in selling?</div><a class="join-us" href="#">Get Started</a>
             </div>
             <div class="invitation-block">
-                <div class="simple-txt">Already have an account</div><a class="join-us" href="#">Log In</a>
+                <div class="simple-txt">Already have an account</div><a class="join-us" href="{{ route('login') }}">Log In</a>
             </div>
         </div>
     </div>
