@@ -1665,7 +1665,6 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   margin-bottom: 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;

@@ -4,9 +4,22 @@
     Laravel Store
 @endsection
 
-@section('content')
+@section('content')@if(Session::has('success'))
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+            <div id="charge-message" class="alert alert-success">
+                {{ Session::get('success') }}
+            </div>
+        </div>
+    </div>
+@endif
+
     <main class="main">
+
+
         <h4 class="section-heading">TRENDING</h4>
+
+
         @foreach($products as $product)
             <div class="_1-4-product-card">
                 <a class="link-block w-inline-block" href="#"><img class="product-card-image" sizes="(max-width: 479px) 43vw, (max-width: 767px) 44vw, (max-width: 991px) 29vw, 215.59375px" src="{{$product->imagePath}}" >
