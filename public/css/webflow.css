@@ -919,16 +919,23 @@ textarea.w-select {
 .w-slider-arrow-left {
   z-index: 3;
   right: auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .w-slider-arrow-right {
   z-index: 4;
   left: auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .w-icon-slider-left,
 .w-icon-slider-right {
-  top: 0;
+  top:130px;
   right: 0;
-  bottom: 0;
+  bottom:130px;
   left: 0;
   width: 1em;
   height: 1em;

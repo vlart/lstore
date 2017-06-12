@@ -2,11 +2,11 @@
     <div class="container footer">
         <div class="footer-top-block"><a class="footer-logo" href="#">LOGO</a>
             <div class="social-btns-block">
-                <a class="social-icon-block w-inline-block" href="#"><img class="social-network-icon" src="images/facebook-logo.svg">
+                <a class="social-icon-block w-inline-block" href="http://facebook.com"><img class="social-network-icon" src="images/facebook-logo.svg">
                 </a>
-                <a class="social-icon-block w-inline-block" href="#"><img class="social-network-icon" src="images/instagram-logo.svg">
+                <a class="social-icon-block w-inline-block" href="http://instagram.com"><img class="social-network-icon" src="images/instagram-logo.svg">
                 </a>
-                <a class="social-icon-block w-inline-block" href="#"><img class="social-network-icon" src="images/twitter.svg">
+                <a class="social-icon-block w-inline-block" href="http://twitter.com"><img class="social-network-icon" src="images/twitter.svg">
                 </a>
             </div>
         </div>

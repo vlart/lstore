@@ -13,7 +13,7 @@ class VenderController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth:vender');
+        $this->middleware('auth'); //:vender    //авторизация продавец
     }
 
     /**

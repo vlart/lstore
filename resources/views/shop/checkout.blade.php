@@ -20,10 +20,10 @@
                     </div>
                     <form class="ch-form" action="{{route('checkout')}}" method="post"  id="checkout-form" name="checkout-form">
                         <label class="ch-label" for="c-name">Name on a card:</label>
-                        <input class="ch-input w-input"  id="c-name" maxlength="50" name="card-name" placeholder="Enter your name" type="text">
+                        <input class="ch-input w-input"  id="c-name" maxlength="50" name="card-name" placeholder="Enter your name" type="text" required="required">
 
                         <label class="ch-label" for="c-address">Shipping address:</label>
-                        <input class="ch-input w-input"  id="c-address" maxlength="200" name="c-address" placeholder="Enter your address" type="text">
+                        <input class="ch-input w-input"  id="c-address" maxlength="200" name="c-address" placeholder="Enter your address" type="text" required="required">
 
                         <label class="ch-label" for="c-number">Card number:</label>
                         <input class="ch-input w-input"  id="c-number" maxlength="16" name="card-number" placeholder="Enter your card number" required="required" type="text">

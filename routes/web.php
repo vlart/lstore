@@ -11,33 +11,37 @@
 |
 */
 
+//use Illuminate\Support\Facades\Auth;
+
 Route::get('/', [
-    'uses' =>'ProductController@getIndex',
+    'uses' =>'ProductController@getIndex', //вывод представления, используя ProductController
     'as' => 'product.index'
 ]);
+Auth::routes();     // Маршруты аутентификации...
 
-Auth::routes();
 
 Route::get('/home', [
-    'uses'=>'HomeController@index',
+    'uses'=>'HomeController@index',          //переадресация обычного пользователя в профайл
     'as'=>'/home'
 ]);
 
-Route::get('/admin', 'AdminController@index')->name('admin');
+Route::get('/admin', 'AdminController@index')->name('admin');   // route для админов
 
-Route::get('/vender', 'AdminController@index')->name('vender');
+Route::get('/vender', 'VenderController@index')->name('vender');  // route для продавцов
 
-
+// добавление в корзину
 Route::get('add-to-cart/{id}', [
     'uses' => 'ProductController@getAddToCart',
     'as' => 'product.addToCart'
 ]);
 
+// переход в корзину
 Route::get('shopping-cart', [
     'uses' => 'ProductController@getCart',
     'as' => 'product.shoppingCart'
 ]);
 
+// переход на страницу оплаты
 Route::get('/checkout', [
     'uses' => 'ProductController@getCheckout',
     'as' => 'checkout',

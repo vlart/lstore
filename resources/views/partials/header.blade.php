@@ -18,7 +18,7 @@
                     <div class="text-block">Shop by category</div>
                     <div class="w-icon-dropdown-toggle"></div>
                 </div>
-                <nav class="w-dropdown-list"><a class="w-dropdown-link" href="#">Link 1</a><a class="w-dropdown-link" href="#">Link 2</a><a class="w-dropdown-link" href="#">Link 3</a>
+                <nav class="w-dropdown-list"><a class="w-dropdown-link" href="#">Outfit</a><a class="w-dropdown-link" href="#">Jewelery</a><a class="w-dropdown-link" href="#">Wooden crafts</a>
                 </nav>
             </div>
             <nav class="top-nav-menu w-nav-menu" role="navigation">
@@ -26,7 +26,7 @@
                     <div class="cart-item-number">{{Session::has('cart') ? Session::get('cart')->totalQty: ''}}</div>
                 </a>
                 @if (Auth::guest())
-                    <a class="nav-link w-inline-block" href="c"><img class="top-menu-icon" height="25" src="images/user_signup.svg"> <div class="cart-item-number">Register</div>
+                    <a class="nav-link w-inline-block" href="{{route('register')}}"><img class="top-menu-icon" height="25" src="images/user_signup.svg"> <div class="cart-item-number">Register</div>
                     </a>
 
                     <a class="nav-link w-inline-block" href="{{route('login')}}"><img class="top-menu-icon" height="25" src="images/login.svg"> <div class="cart-item-number">Login</div>
@@ -43,9 +43,7 @@
                         <div class="divider-hr"></div>
 
 
-                        <div class="dd-user-menu-link-wrapper"><img class="user-icon" height="25" src="images/logout.svg"><a href="{{ route('logout') }}"
-                                                                                                                                                                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" class="dd-user-menu-link w-dropdown-link">
+                        <div class="dd-user-menu-link-wrapper"><img class="user-icon" height="25" src="images/logout.svg"><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="dd-user-menu-link w-dropdown-link">
                                     Logout
                                 </a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

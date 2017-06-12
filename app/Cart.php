@@ -12,9 +12,9 @@ class Cart
     public function __construct($oldCart)
     {
         if ($oldCart){
-            $this->items = $oldCart->items;
-            $this->totalQty = $oldCart->totalQty;
-            $this->totalPrice = $oldCart->totalPrice;
+            $this->items = $oldCart->items;  // товар передается корзине
+            $this->totalQty = $oldCart->totalQty;   // количество передается корзине
+            $this->totalPrice = $oldCart->totalPrice;    // общая цена передается корзине
         }
     }
 

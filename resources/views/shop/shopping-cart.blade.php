@@ -32,12 +32,12 @@
                                     <form data-name="Email Form 2" id="email-form-2" name="email-form-2">
                                         <input class="text-field w-input" data-name="quantity" id="quantity" maxlength="256" name="quantity" required="required" type="text" value="{{$product['qty']}}">
                                     </form>
-                                    <div class="w-form-done">
-                                        <div>Thank you! Your submission has been received!</div>
-                                    </div>
-                                    <div class="w-form-fail">
-                                        <div>Oops! Something went wrong while submitting the form</div>
-                                    </div>
+                                    {{--<div class="w-form-done">--}}
+                                        {{--<div>Thank you! Your submission has been received!</div>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="w-form-fail">--}}
+                                        {{--<div>Oops! Something went wrong while submitting the form</div>--}}
+                                    {{--</div>--}}
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,10 @@
 /* Custom CSS*/
 
+.arrow-left{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .top-navbar {
   z-index: 100;
@@ -1703,17 +1708,60 @@
 }
 
 
+/* Dashboard */
 
+.product-price.dash-prod-price {
+  height: 40px;
+  margin-bottom: 0px;
+}
 
+.container.dash-container {
+  margin-top: 15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
+.simple-txt.dash-text {
+  max-width: 85%;
+  text-align: left;
+}
 
+.cart-item.dash-cart-item {
+  padding: 5px;
+  padding-right: 20;
+}
 
+.cart-product-desc-block.dash-prod-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  margin-left: 20px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
+.heading-3.dash-heading {
+  line-height: 18px;
+}
 
+.cart-total-price.dash-total {
+  padding: 5px;
+  background-color: #eefaf9;
+}
 
-
-
-
-
+.cart-items.dash-cart-items{
+  width:100%;
+  min-width: 350px;
+}
 
 
